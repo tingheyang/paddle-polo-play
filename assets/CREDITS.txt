@@ -1,0 +1,25 @@
+PADDLE — character assets and animation provenance
+
+Human anatomy and original skin weights:
+Male base mesh — Innerscene, adapted from MakeHuman CC0 assets.
+https://www.innerscene.com/tools/library/3d-parts/male-base-mesh-3d-person-rigged-a-pose-380e6d89
+Downloaded 2026-11-05. Source page explicitly dedicates the model to CC0.
+163-bone skeleton; the source contains no animation clips.
+Runtime adaptation: fitted sports clothing, flotation vest and helmet; hidden below-cockpit geometry omitted from rendering; independent cloned skeleton for every player.
+
+Skin texture:
+MakeHuman system asset young_lightskinned_male_diffuse.png.
+CC0 system-asset inventory:
+https://static.makehumancommunity.org/assets/assetpacks/makehuman_system_assets.html
+Downloaded from OSRF Gazebo model mirror:
+https://raw.githubusercontent.com/osrf/gazebo_models/master/person_standing/materials/textures/young_lightskinned_male_diffuse.png
+
+Canoe-polo animation clips:
+Original authored skeletal keyframes for idle, paddling, wind-up, passing,
+shooting, catching, blocking and stealing; quaternion tracks blended with
+Three.js AnimationMixer plus hand-to-paddle inverse kinematics.
+These are authored animations, not motion-capture recordings and not NBA 2K assets.
+
+Three.js r160.1 / GLTFLoader: MIT; see ../vendor/THREE-LICENSE.txt.
+GLTFLoader global-build adaptation includes toTrianglesDrawMode from the
+same official Three.js package. No external runtime CDN required.
